@@ -1,0 +1,51 @@
+.top-bar {
+  padding-block: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 0;
+
+  @include on-tablet {
+    padding-block: 64px;
+    padding-top: 34px;
+  }
+
+  @include on-desktop {
+    padding-block: 36px;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+
+    @include on-tablet {
+      gap: 34px;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+    width: 130px;
+
+    @include hover(transform, scale(1.2));
+
+    @include on-tablet {
+      width: 187px;
+    }
+
+    &-menu {
+      width: 130px;
+
+      @include on-desktop {
+        width: 187px;
+
+        @include hover(transform, scale(1.2));
+      }
+    }
+  }
+}
