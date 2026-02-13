@@ -49,7 +49,18 @@
             </a>
 
             <div class="top-bar__icons">
-              <a href="tel:+1 234 5555-55-55" class="icon icon--phone"></a>
+              <div class="top-bar__phone">
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="top-bar__phone-link"
+                >
+                  <span class="top-bar__phone-number">
+                    +1 234 5555-55-55
+                  </span>
+                  <span class="icon icon--phone"></span>
+                </a>
+              </div>
+
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -269,7 +280,7 @@
               >
                 <div class="contacts__field">
                   <input
-                    type="text"
+                    type="text" required
                     id="name"
                     name="name"
                     aria-label="Your name"
@@ -280,7 +291,7 @@
 
                 <div class="contacts__field">
                   <input
-                    type="email"
+                    type="email" required
                     name="email"
                     id="email"
                     aria-label="Your email"
@@ -290,7 +301,7 @@
                 </div>
 
                 <div class="contacts__field contacts__field--message">
-                  <textarea
+                  <textarea required
                     name="message"
                     id="message"
                     aria-label="Your message"

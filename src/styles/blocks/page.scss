@@ -1,14 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body:has(.page__menu:target) {
+  overflow: hidden;
+}
+
 .page {
   font-family: $font-family;
   font-size: 16px;
   line-height: 140%;
   color: $main-text-color;
-
-  scroll-behavior: smooth;
-
-  &:has(.page__menu:target) {
-    overflow: hidden;
-  }
 
   &__body {
     margin: 0;
